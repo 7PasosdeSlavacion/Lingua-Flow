@@ -1,0 +1,186 @@
+<!--Estructura HTML-5-->
+<!DOCTYPE html>
+<html lang="es">
+<!--Datos no Vicibles de la WEB-->
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------->
+    <!--Links-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link rel="stylesheet" href="CSS/signup.css" />
+    <link rel="stylesheet" href="CSS/usuario.css" />
+    <!--------->
+
+    <!--Otros-->
+    <title>Lingua Flow - Home</title>
+    <link rel="icon" href="IMG/Lingua_Flow.png" />
+    <!--------->
+</head>
+<!------------------------------>
+
+<!--Cuerpo de la WEB-->
+
+<body>
+    <!--Login-->
+    <section class="login hidden">
+        <div class="login-info">
+            <button id="hideLoginForm">X</button>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="">Email</label>
+                <input type="email" placeholder="email" id="email" required autofocus />
+                <label for="">Contraseña</label>
+                <input type="password" placeholder="contraseña" id="password" required />
+                <input type="submit" value="Ingresa" />
+            </form>
+        </div>
+    </section>
+    <!--------->
+
+    <!--signup-->
+    <section class="signup hidden">
+        <div class="signup-info">
+            <button id="hidesignupForm">X</button>
+            <h2>Registrate</h2>
+
+            <form id="signupForm">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="nombre" id="name" required autofocus />
+
+                <label for="">Email</label>
+                <input type="email" placeholder="email" id="email" required />
+
+                <label for="">Contraseña</label>
+                <input type="password" placeholder="contraseña" id="password" required />
+
+                <input type="submit" value="Registrate" />
+            </form>
+        </div>
+    </section>
+    <!--------->
+
+    <!--Header-->
+    <header class="header">
+        <div class="header-logo">
+            <img src="IMG/Lingua_Flow_3.png" alt="LOGO" onclick="enviar('principal')" />
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="">APRENDER</a></li>
+
+                <li><a href="">PRACTICAR</a></li>
+
+                <li><a href="">HERRAMIENTAS</a></li>
+            </ul>
+        </div>
+
+        <div class="otros-header">
+            <div class="cuenta ocultar">
+                <ion-icon name="person-circle" id="person-circle" onclick="enviar('cuenta')"></ion-icon>
+            </div>
+
+            <div class="acciones">
+                <span class="span-open">Accede</span>
+                <button class="btn-header"><b>Registrate</b></button>
+            </div>
+
+            <div class="idioma">
+                <span class="spanish-header">Español</span>
+            </div>
+        </div>
+    </header>
+    <!----------->
+
+    <!--Bucador-->
+    <section class="buscador">
+        <div class="texto-buscador">
+            <h1>Aprende Ingles Gratis</h1>
+            <span>Aquí encontrarás todos los contenidos necesarios para aprender la
+                lengua inglesa a tu ritmo.</span>
+        </div>
+        <div class="buscador-buscador">
+            <ion-icon name="search" class="search"></ion-icon>
+            <input type="text" placeholder="Introduce aqui el Texto" />
+            <ion-icon name="arrow-forward" class="arrow-forward"></ion-icon>
+        </div>
+    </section>
+    <!----------->
+
+    <section class="info_cuenta ">
+        <div class="cuenta">
+            <h1>Datos Personales</h1>
+            <label for="">Nombre</label>
+            <input type="text" id="nombre-user">
+            <label for="">Correo</label>
+            <input type="text" id="correo-user">
+            <label for="">Contraseña</label>
+            <input type="text" id="pass-user">
+            <button id="logout">Cerrar Secion</button>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="info-1">
+            <span>APRENDE</span>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+        </div>
+
+        <div class="info-1">
+            <span>PRACTICA</span>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+        </div>
+
+        <div class="info-1">
+            <span>RECURSOS</span>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+        </div>
+
+        <div class="info-2">
+            <h3>Recibe las novedades en tu correo</h3>
+            <input type="text" placeholder="Tu email.." />
+            <button>Enviar</button>
+            <div class="social">
+                <img src="IMG/Facebook.png" alt="" />
+                <img src="IMG/Youtube.png" alt="" />
+            </div>
+        </div>
+    </footer>
+
+    <div class="final">
+        <span id="final-1">2024 © SOK Internet S.L.</span>
+        <span class="separar">conectar /</span>
+        <span class="separar"> Politica de privacidad /</span>
+        <span class="separar"> Terminos y Usos</span>
+    </div>
+    <!---------->
+
+    <!--Scritps-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="JS/js.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/signup.js"></script>
+    <script src="JS/usuario.js"></script>
+    <!---------->
+</body>
+<!-------------------->
+
+</html>
+<!--------------------->

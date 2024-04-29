@@ -1,0 +1,88 @@
+/* Estilos para el formulario de registro (signup) */
+
+.signup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .signup-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+  }
+  
+  .signup-info h2 {
+    margin-top: 0;
+  }
+  
+  .signup-info label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .signup-info input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-info input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .signup-info input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .signup-info p {
+    margin-top: 15px;
+  }
+  
+  .signup-info a {
+    color: #007bff;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #hidesignupForm {
+    background-color: transparent;
+    border: none;
+    color: rgb(16, 61, 124);
+    font-size: 20px;
+  }
+  
+  #hidesignupForm:hover {
+    color: rgb(124, 16, 16);
+  }
+  
+  .login .login-info a {
+    color: rgb(16, 61, 124);
+  }
+  
+  .login .login-info a:hover {
+    color: rgb(24, 93, 190);
+  }
+  
+  input[type="text"] {
+    border: none;
+    outline: none;
+  }
