@@ -1,0 +1,9 @@
+{
+    "header": {
+        "navbar": "LEARN",
+        "navbar2": "PRACTICE",
+        "navbar3": "TOOLS",
+        "login": "Login",
+        "signup": "Sign up"
+    }
+}

@@ -1,283 +1,334 @@
 <!--Estructura HTML-5-->
 <!DOCTYPE html>
 <html lang="es">
-<!--Datos no Vicibles de la WEB-->
+  <!--Datos no Vicibles de la WEB-->
 
-<head>
-  <!--Metadatos-->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!------------->
-  <!--Links-->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="CSS/login.css" />
-  <link rel="stylesheet" href="CSS/signup.css" />
-  <!--------->
+  <head>
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------->
+    <!--Links-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+    <link rel="stylesheet" href="CSS/signup.css" />
+    <!--------->
 
-  <!--Otros-->
-  <title>Lingua Flow - Home</title>
-  <link rel="icon" href="IMG/Lingua_Flow.png" />
-  <!--------->
-</head>
-<!------------------------------>
+    <!--Otros-->
+    <title>Lingua Flow - Home</title>
+    <link rel="icon" href="IMG/Lingua_Flow.png" />
+    <!--------->
+  </head>
+  <!------------------------------>
 
-<!--Cuerpo de la WEB-->
+  <!--Cuerpo de la WEB-->
 
-<body>
-
-  <!--Login-->
-  <section class="login hidden">
-    <div class="login-info">
-      <button id="hideLoginForm">X</button>
-      <h2>Login</h2>
-      <form id="loginForm">
-        <label for="">Email</label>
-        <input type="email" placeholder="email" id="email" required autofocus />
-        <label for="">Contraseña</label>
-        <input type="password" placeholder="contraseña" id="password" required />
-        <input type="submit" value="Ingresa" />
-      </form>
-    </div>
-  </section>
-  <!--------->
-
-  <!--signup-->
-  <section class="signup hidden">
-    <div class="signup-info">
-      <button id="hidesignupForm">X</button>
-      <h2>Registrate</h2>
-
-      <form id="signupForm">
-
-        <label for="">Nombre</label>
-        <input type="text" placeholder="nombre" id="name" required autofocus />
-
-        <label for="">Email</label>
-        <input type="email" placeholder="email" id="email" required />
-
-        <label for="">Contraseña</label>
-        <input type="password" placeholder="contraseña" id="password" required />
-
-        <input type="submit" value="Registrate" />
-      </form>
-    </div>
-  </section>
-  <!--------->
-
-  <!--Header-->
-  <header class="header">
-    <div class="header-logo">
-      <img src="IMG/Lingua_Flow_3.png" alt="LOGO" onclick="enviar('principal')"/>
-    </div>
-
-    <div class="navbar">
-      <ul>
-        <li><a href="">APRENDER</a></li>
-
-        <li><a href="">PRACTICAR</a></li>
-
-        <li><a href="">HERRAMIENTAS</a></li>
-      </ul>
-    </div>
-
-    <div class="otros-header">
-
-      <div class="cuenta ocultar">
-        <ion-icon name="person-circle" id="person-circle" onclick="enviar('cuenta')"></ion-icon>
+  <body>
+    <!--Login-->
+    <section class="login hidden">
+      <div class="login-info">
+        <button id="hideLoginForm">X</button>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <label for="">Email</label>
+          <input
+            type="email"
+            placeholder="email"
+            id="email"
+            required
+            autofocus
+          />
+          <label for="">Contraseña</label>
+          <input
+            type="password"
+            placeholder="contraseña"
+            id="password"
+            required
+          />
+          <input type="submit" value="Ingresa" />
+        </form>
       </div>
+    </section>
+    <!--------->
 
-      <div class="acciones">
-        <span class="span-open">Accede</span>
-        <button class="btn-header"><b>Registrate</b></button>
+    <!--signup-->
+    <section class="signup hidden">
+      <div class="signup-info">
+        <button id="hidesignupForm">X</button>
+        <h2>Registrate</h2>
+
+        <form id="signupForm">
+          <label for="">Nombre</label>
+          <input
+            type="text"
+            placeholder="nombre"
+            id="name"
+            required
+            autofocus
+          />
+
+          <label for="">Email</label>
+          <input type="email" placeholder="email" id="email" required />
+
+          <label for="">Contraseña</label>
+          <input
+            type="password"
+            placeholder="contraseña"
+            id="password"
+            required
+          />
+
+          <input type="submit" value="Registrate" />
+        </form>
       </div>
+    </section>
+    <!--------->
 
-      <div class="idioma">
-        <span class="spanish-header">Español</span>
-      </div>
-    </div>
-  </header>
-  <!----------->
-
-  <!--Bucador-->
-  <section class="buscador">
-    <div class="texto-buscador">
-      <h1>Aprende Ingles Gratis</h1>
-      <span>Aquí encontrarás todos los contenidos necesarios para aprender la
-        lengua inglesa a tu ritmo.</span>
-    </div>
-    <div class="buscador-buscador">
-      <ion-icon name="search" class="search"></ion-icon>
-      <input type="text" placeholder="Introduce aqui el Texto" />
-      <ion-icon name="arrow-forward" class="arrow-forward"></ion-icon>
-    </div>
-  </section>
-  <!----------->
-
-  <!--Categorias 1-->
-  <section class="categoria-1">
-    <div class="texto-categoria-1">
-      <h2>Cursos de Inlges</h2>
-      <span>Estos son nuestros cursos de inglés listos para que empieces a
-        aprender</span>
-    </div>
-
-    <div class="section">
-      <div class="cart">
-        <img src="IMG/Nivel_Basico.jpg" alt="IMG" />
-        <h3>Nivel Basico</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
-      </div>
-
-      <div class="cart">
-        <img src="IMG/Nivel_Intermedio.jpg" alt="" />
-        <h3>Nivel Intermedio</h3>
-        <p>
-          Curso Intermedio de Ingles para los q dominan el ingles con
-          conceptos basicos.
-        </p>
-      </div>
-
-      <div class="cart">
-        <img src="IMG/Nivel_Avanzado.jpg" alt="" />
-        <h3>Nivel Avanzado</h3>
-        <p>
-          Curso Avanzado de Ingles para los usuarios q quieren prefecional el
-          Inlges.
-        </p>
-      </div>
-
-      <div class="cart">
+    <!--Header-->
+    <header class="header">
+      <div class="header-logo">
         <img
-          src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
-          alt="" />
-        <h3>Nivel Basico</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
+          src="IMG/Lingua_Flow_3.png"
+          alt="LOGO"
+          onclick="enviar('principal')"
+        />
       </div>
 
-      <div class="cart">
-        <img
-          src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
-          alt="" />
-        <h3>Nivel Basico</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
+      <div class="navbar">
+        <ul>
+          <li><a href="" data-section="header" data-value="navbar">APRENDER</a></li>
+
+          <li><a href="" data-section="header" data-value="navbar2">PRACTICAR</a></li>
+
+          <li><a href="" data-section="header" data-value="navbar3">HERRAMIENTAS</a></li>
+        </ul>
       </div>
+
+      <div class="otros-header">
+        <div class="cuenta ocultar">
+          <ion-icon
+            name="person-circle"
+            id="person-circle"
+            onclick="enviar('cuenta')"
+          ></ion-icon>
+        </div>
+
+        <div class="acciones">
+          <span class="span-open" data-section="header" data-value="login">Accede</span>
+          <button class="btn-header" data-section="header" data-value="signup"><b>Registrate</b></button>
+        </div>
+
+        <div class="idioma" id="flags">
+          <!--<span class="spanish-header">Español</span>-->
+          <div class="idioma-items" data-language="es">
+            <img src="IMG/Español.jpg" alt="ESPAÑOL" width="30px"/>
+          </div>
+
+          <div class="idioma-items" data-language="en">
+            <img src="IMG/Ingles.png" alt="INGLES" width="39px"/>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+    <!----------->
+
+    <!--Bucador-->
+    <section class="buscador">
+      <div class="texto-buscador">
+        <h1>Aprende Ingles Gratis</h1>
+        <span
+          >Aquí encontrarás todos los contenidos necesarios para aprender la
+          lengua inglesa a tu ritmo.</span
+        >
+      </div>
+      <div class="buscador-buscador">
+        <ion-icon name="search" class="search"></ion-icon>
+        <input type="text" placeholder="Introduce aqui el Texto" />
+        <ion-icon name="arrow-forward" class="arrow-forward"></ion-icon>
+      </div>
+    </section>
+    <!----------->
+
+    <!--Categorias 1-->
+    <section class="categoria-1">
+      <div class="texto-categoria-1">
+        <h2>Cursos de Inlges</h2>
+        <span
+          >Estos son nuestros cursos de inglés listos para que empieces a
+          aprender</span
+        >
+      </div>
+
+      <div class="section">
+        <div class="cart">
+          <img src="IMG/Nivel_Basico.jpg" alt="IMG" />
+          <h3>Nivel Basico</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+        </div>
+
+        <div class="cart">
+          <img src="IMG/Nivel_Intermedio.jpg" alt="" />
+          <h3>Nivel Intermedio</h3>
+          <p>
+            Curso Intermedio de Ingles para los q dominan el ingles con
+            conceptos basicos.
+          </p>
+        </div>
+
+        <div class="cart">
+          <img src="IMG/Nivel_Avanzado.jpg" alt="" />
+          <h3>Nivel Avanzado</h3>
+          <p>
+            Curso Avanzado de Ingles para los usuarios q quieren prefecional el
+            Inlges.
+          </p>
+        </div>
+
+        <div class="cart">
+          <img
+            src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
+            alt=""
+          />
+          <h3>Nivel Basico</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+        </div>
+
+        <div class="cart">
+          <img
+            src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
+            alt=""
+          />
+          <h3>Nivel Basico</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+        </div>
+      </div>
+    </section>
+    <!---------------->
+
+    <!--Categoria-2-->
+    <section class="categoria-1">
+      <div class="texto-categoria-1">
+        <h2>Temas Populares</h2>
+        <span
+          >Estas son las lecciones mas visitadas en los últimos 30 días
+        </span>
+      </div>
+
+      <div class="section">
+        <div class="cart2">
+          <img
+            src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
+            alt=""
+          />
+          <h3>Los Pronombre</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+          <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
+        </div>
+
+        <div class="cart2">
+          <img
+            src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
+            alt=""
+          />
+          <h3>Nivel Basico</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+          <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
+        </div>
+
+        <div class="cart2">
+          <img
+            src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
+            alt=""
+          />
+          <h3>Nivel Basico</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+          <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
+        </div>
+
+        <div class="cart2">
+          <img
+            src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
+            alt=""
+          />
+          <h3>Nivel Basico</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+          <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
+        </div>
+
+        <div class="cart2">
+          <img
+            src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
+            alt=""
+          />
+          <h3>Nivel Basico</h3>
+          <p>Curso Basico de Ingles para los q esta empezando.</p>
+          <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
+        </div>
+      </div>
+    </section>
+    <!--------------->
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="info-1">
+        <span>APRENDE</span>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+      </div>
+
+      <div class="info-1">
+        <span>PRACTICA</span>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+      </div>
+
+      <div class="info-1">
+        <span>RECURSOS</span>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+        <p>Primeros Pasos</p>
+      </div>
+
+      <div class="info-2">
+        <h3>Recibe las novedades en tu correo</h3>
+        <input type="text" placeholder="Tu email.." />
+        <button>Enviar</button>
+        <div class="social">
+          <img src="IMG/Facebook.png" alt="" />
+          <img src="IMG/Youtube.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="final">
+      <span id="final-1">2024 © SOK Internet S.L.</span>
+      <span class="separar">conectar /</span>
+      <span class="separar"> Politica de privacidad /</span>
+      <span class="separar"> Terminos y Usos</span>
     </div>
-  </section>
-  <!---------------->
+    <!---------->
 
-  <!--Categoria-2-->
-  <section class="categoria-1">
-    <div class="texto-categoria-1">
-      <h2>Temas Populares</h2>
-      <span>Estas son las lecciones mas visitadas en los últimos 30 días
-      </span>
-    </div>
-
-    <div class="section">
-      <div class="cart2">
-        <img
-          src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
-          alt="" />
-        <h3>Los Pronombre</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
-        <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
-      </div>
-
-      <div class="cart2">
-        <img
-          src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
-          alt="" />
-        <h3>Nivel Basico</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
-        <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
-      </div>
-
-      <div class="cart2">
-        <img
-          src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
-          alt="" />
-        <h3>Nivel Basico</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
-        <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
-      </div>
-
-      <div class="cart2">
-        <img
-          src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
-          alt="" />
-        <h3>Nivel Basico</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
-        <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
-      </div>
-
-      <div class="cart2">
-        <img
-          src="https://img.freepik.com/fotos-premium/planta-estilo-dibujos-animados-feliz-dibujar-imagen-ilustracion-ai-generado-arte_1017715-3764.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1714176000&semt=ais"
-          alt="" />
-        <h3>Nivel Basico</h3>
-        <p>Curso Basico de Ingles para los q esta empezando.</p>
-        <button>APRENDE <ion-icon name="arrow-forward"></ion-icon></button>
-      </div>
-    </div>
-  </section>
-  <!--------------->
-
-  <!--Footer-->
-  <footer class="footer">
-    <div class="info-1">
-      <span>APRENDE</span>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-    </div>
-
-    <div class="info-1">
-      <span>PRACTICA</span>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-    </div>
-
-    <div class="info-1">
-      <span>RECURSOS</span>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-      <p>Primeros Pasos</p>
-    </div>
-
-    <div class="info-2">
-      <h3>Recibe las novedades en tu correo</h3>
-      <input type="text" placeholder="Tu email.." />
-      <button>Enviar</button>
-      <div class="social">
-        <img src="IMG/Facebook.png" alt="" />
-        <img src="IMG/Youtube.png" alt="" />
-      </div>
-    </div>
-  </footer>
-
-  <div class="final">
-    <span id="final-1">2024 © SOK Internet S.L.</span>
-    <span class="separar">conectar /</span>
-    <span class="separar"> Politica de privacidad /</span>
-    <span class="separar"> Terminos y Usos</span>
-  </div>
-  <!---------->
-
-  <!--Scritps-->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script src="JS/js.js"></script>
-  <script src="JS/login.js"></script>
-  <script src="JS/signup.js"></script>
-  <!---------->
-</body>
-<!-------------------->
-
+    <!--Scritps-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="JS/js.js"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/signup.js"></script>
+    <script src="JS/idioma.js"></script>
+    <!---------->
+  </body>
+  <!-------------------->
 </html>
 <!--------------------->
