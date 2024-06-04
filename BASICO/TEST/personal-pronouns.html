@@ -1,0 +1,281 @@
+<!--Estructura HTML-5-->
+<!DOCTYPE html>
+<html lang="es">
+<!--Datos no Vicibles de la WEB-->
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!------------->
+    <!--Links-->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/BASICO/style.css" />
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <link rel="stylesheet" href="/CSS/signup.css" />
+    <link rel="stylesheet" href="/BASICO/TEST/personal-pronouns.css" />
+    <!--------->
+
+    <!--Otros-->
+    <title>Lingua Flow - Aprende</title>
+    <link rel="icon" href="/IMG/Lingua_Flow.png" />
+    <!--------->
+</head>
+<!------------------------------>
+
+<!--Cuerpo de la WEB-->
+
+<body>
+    <!--Login-->
+    <section class="login hidden">
+        <div class="login-info">
+            <button id="hideLoginForm">X</button>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="">Email</label>
+                <input type="email" placeholder="email" id="emailLogin" required autofocus />
+                <label for="">Contraseña</label>
+                <input type="password" placeholder="contraseña" id="passwordLogin" required />
+                <input type="submit" value="Ingresa" />
+            </form>
+        </div>
+    </section>
+    <!--------->
+
+    <!--signup-->
+    <section class="signup hidden">
+        <div class="signup-info">
+            <button id="hidesignupForm">X</button>
+            <h2>Registrate</h2>
+
+            <form id="signupForm">
+                <label for="">Nombre</label>
+                <input type="text" placeholder="nombre" id="nameSignup" required autofocus />
+
+                <label for="">Email</label>
+                <input type="email" placeholder="email" id="emailSignup" required />
+
+                <label for="">Contraseña</label>
+                <input type="password" placeholder="contraseña" id="passwordSignup" required />
+
+                <input type="submit" value="Registrate" />
+            </form>
+        </div>
+    </section>
+    <!--------->
+
+    <!--Header-->
+    <header class="header">
+        <div class="header-logo">
+            <img src="IMG/Lingua_Flow_3.png" alt="LOGO" onclick="enviar('principal')" />
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="/aprende.html" data-section="header" data-value="navbar">APRENDER</a>
+                </li>
+
+                <li>
+                    <a href="" data-section="header" data-value="navbar2">PRACTICAR</a>
+                </li>
+
+                <li>
+                    <a href="" data-section="header" data-value="navbar3">HERRAMIENTAS</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="otros-header">
+            <div class="cuenta ocultar">
+                <ion-icon name="person-circle" id="person-circle" onclick="enviar('cuenta')"></ion-icon>
+            </div>
+
+            <div class="acciones">
+                <span class="span-open" data-section="header" data-value="login">Accede</span>
+                <button class="btn-header" data-section="header" data-value="signup">
+                    <b>Registrate</b>
+                </button>
+            </div>
+
+            <div class="idioma" id="flags">
+                <!--<span class="spanish-header">Español</span>-->
+                <div class="idioma-items" data-language="es">
+                    <img src="IMG/Español.jpg" alt="ESPAÑOL" width="30px" />
+                </div>
+
+                <div class="idioma-items" data-language="en">
+                    <img src="IMG/Ingles.png" alt="INGLES" width="39px" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----------->
+
+    <!--Bucador-->
+    <section class="buscador">
+
+        <div class="texto-buscador">
+            <h1>Aprende Ingles Gratis</h1>
+            <span>Aquí encontrarás todos los contenidos necesarios para aprender la
+                lengua inglesa a tu ritmo.</span>
+            <div id="resultados"></div>
+        </div>
+
+        <div class="buscador-buscador">
+            <ion-icon name="search" class="search"></ion-icon>
+            <input type="text" id="busqueda" placeholder="Introduce aqui el Texto" />
+            <ion-icon name="arrow-forward" class="arrow-forward" onclick="buscar()"></ion-icon>
+        </div>
+    </section>
+    <!----------->
+
+    <section class="test container">
+
+        <div class="txt">
+            <span>PRONOUNS - LESSON 1.1</span>
+            <h1>Personal Pronouns</h1>
+            <span>(LOS PRONOMBRES PERSONALES)</span>
+        </div>
+
+        <div class="unit">
+
+            <p class="p-unit">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita mollitia
+                sint nulla
+                ipsa facere cumque rem optio aperiam repellendus aspernatur vel praesentium dolore, voluptate voluptatum
+                dolor iure saepe autem?</p>
+            <span>PRONOMBRES <span> EJEMPLO </span> </span>
+
+            <div class="box">
+                <div class="box-1">
+                    <span>I</span>
+                    <p>yo</p>
+                </div>
+                <div class="box-2">
+                    <div class="flex">
+                        <button id="i_am_ill_button"><ion-icon name="play"></ion-icon></button>
+                        <audio id="i_am_ill" src="/AUDIO/I_am_ill.mp3"></audio>
+                        <span>I am ill</span>
+                    </div>
+                    <p>Yo estoy Enfermo</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-1">
+                    <span>you</span>
+                    <p>tú</p>
+                </div>
+                <div class="box-2">
+                    <div class="flex">
+                        <button id="You_are_tall_button"><ion-icon name="play"></ion-icon></button>
+                        <audio id="You_are_tall" src="/AUDIO/You_are_tall.mp3"></audio>
+                        <span>You are tall.</span>
+                    </div>
+                    <p>Tú eres alto.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-1">
+                    <span>he</span>
+                    <p>él</p>
+                </div>
+                <div class="box-2">
+                    <div class="flex">
+                        <button id="He_is_handsome_button"><ion-icon name="play"></ion-icon></button>
+                        <audio id="He_is_handsome" src="/AUDIO/He_is_handsome.mp3"></audio>
+                        <span>He is handsome</span>
+                    </div>
+                    <p>Él es guapo</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-1">
+                    <span>she</span>
+                    <p>ella</p>
+                </div>
+                <div class="box-2">
+                    <div class="flex">
+                        <button id="She_is_pretty_button"><ion-icon name="play"></ion-icon></button>
+                        <audio id="She_is_pretty" src="/AUDIO/She_is_pretty.mp3"></audio>
+                        <span>She is pretty</span>
+                    </div>
+                    <p>Ella es guapa</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-1">
+                    <span>it</span>
+                    <p>ello</p>
+                </div>
+                <div class="box-2">
+                    <div class="flex">
+                        <button id="It_is_cold_today_button"><ion-icon name="play"></ion-icon></button>
+                        <audio id="It_is_cold_today" src="/AUDIO/It_is_cold_today.mp3"></audio>
+                        <span>It is cold today</span>
+                    </div>
+                    <p>Hoy hace frío</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!--Footer-->
+    <footer class="footer">
+        <div class="info-1">
+            <span>APRENDE</span>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+        </div>
+
+        <div class="info-1">
+            <span>PRACTICA</span>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+        </div>
+
+        <div class="info-1">
+            <span>RECURSOS</span>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+            <p>Primeros Pasos</p>
+        </div>
+
+        <div class="info-2">
+            <h3>Recibe las novedades en tu correo</h3>
+            <input type="text" placeholder="Tu email.." />
+            <button>Enviar</button>
+            <div class="social">
+                <img src="/IMG/Logo_Facebook.png" alt="" />
+                <img src="/IMG/Logo_Youtube.png" alt="" />
+            </div>
+        </div>
+    </footer>
+
+    <div class="final">
+        <span id="final-1">2024 © SOK Internet S.L.</span>
+        <span class="separar">conectar /</span>
+        <span class="separar"> Politica de privacidad /</span>
+        <span class="separar"> Terminos y Usos</span>
+    </div>
+    <!---------->
+
+    <!--Scritps-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="/JS/js.js"></script>
+    <script src="/JS/login.js"></script>
+    <script src="/JS/signup.js"></script>
+    <script src="/JS/idioma.js"></script>
+    <script src="/JS/audios.js"></script>
+    <!---------->
+</body>
+<!-------------------->
+
+</html>
+<!--------------------->

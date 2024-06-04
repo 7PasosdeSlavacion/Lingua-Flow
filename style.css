@@ -72,6 +72,11 @@ body::-webkit-scrollbar-thumb:hover {
   display: inline;
 }
 
+.header .navbar ul li a:hover {
+  transition: color 0.5s linear;
+  color: rgb(255, 153, 0);
+}
+
 .otros-header {
   display: flex;
 }
@@ -239,7 +244,7 @@ input[type="text"] {
   background-color: #fff;
   box-shadow: black;
   width: 170px;
-  height: 300px;
+  height: 320px;
   box-shadow: -2px 19px 26px -14px rgba(0, 0, 0, 0.25);
   flex-basis: calc(20% - 25px);
   border-radius: 20px;
@@ -273,6 +278,45 @@ input[type="text"] {
   background-color: transparent;
   border: none;
   color: #ff7300;
+  cursor: pointer;
+}
+
+.about{
+  display: flex;
+  margin-top: 20px;
+}
+
+.about .img{
+  width: 50%;
+  padding: 0 10px;
+}
+
+.about .img img{
+  width: 600px;
+}
+
+.about .text{
+  width: 50%;
+  padding: 0 10px;
+}
+
+.contact{
+  display: flex;
+  margin-top: 20px;
+}
+
+.contact .img{
+  width: 50%;
+  padding: 0 10px;
+}
+
+.contact .img img{
+  width: 600px;
+}
+
+.contact .text{
+  width: 50%;
+  padding: 0 10px;
 }
 
 .footer {
@@ -288,10 +332,16 @@ input[type="text"] {
 .footer .info-1 {
   width: 150px;
   text-align: left;
+  margin-top: 20px;
 }
 
 .footer .info-1 span {
   text-align: right;
+}
+
+.footer .info-1 p:hover {
+  color: #ff7300;
+  cursor: pointer;
 }
 
 .footer .info-2 {
@@ -315,6 +365,7 @@ input[type="text"] {
   border-radius: 20px;
   font-size: 16px;
   padding: 7px 15px;
+  cursor: pointer;
 }
 
 .footer .info-2 .social img {

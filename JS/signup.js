@@ -14,15 +14,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 const signupForm = document.querySelector('#signupForm');
 signupForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  const name = document.querySelector('#name').value;
-  const email = document.querySelector('#email').value;
-  const pass = document.querySelector('#password').value;
+  const name = document.getElementById('nameSignup').value;
+  const email = document.getElementById('emailSignup').value;
+  const pass = document.getElementById('passwordSignup').value;
 
   const Users = JSON.parse(localStorage.getItem('users')) || []; 
-  const isUserRegistered = Users.find(user => user.email === email);
+  const isUserRegistered = Users.find(users => users.email === email);
   if (isUserRegistered){
     return alert('Usuario ya Registrado');
   }

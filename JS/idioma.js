@@ -1,14 +1,3 @@
-/*const changeLanguage = async (language)=>{
-    const requestJson = await fetch(`./JSON/${language}.json`);
-    const texts = await requestJson.json();
-    
-    console.log(texts);
-    };
-    
-    function idioma(e) {
-      changeLanguage(e.target.parentElement.dataset.language);
-    };*/
-
     const guardarIdiomaEnLocalStorage = (idioma) => {
         localStorage.setItem('idioma', idioma);
       };
