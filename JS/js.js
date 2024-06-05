@@ -50,13 +50,17 @@ function enviar(id) {
       window.location.href = "/BASICO/index.html";
       break;
 
+    case "intermedio":
+      window.location.href = "/INTERMEDIO/index.html";
+      break;
+
     case "1.1":
       window.location.href = "/BASICO/TEST/personal-pronouns.html";
       break;
 
-      case "1.2":
-        window.location.href = "/BASICO/TEST/possessive.html";
-        break;
+    case "1.2":
+      window.location.href = "/BASICO/TEST/possessive.html";
+      break;
 
     default:
       window.location.href = "/error.html";
